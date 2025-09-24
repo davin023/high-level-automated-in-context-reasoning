@@ -1,0 +1,28 @@
+### Question: Let \\[f(x) = \\left\\{\n\\begin{array}{cl} ax+3, &\\text{ if }x>2, \\\\\nx-5 &\\text{ if } -2 \\le x \\le 2, \\\\\n2x-b &\\text{ if } x <-2.\n\\end{array}\n\\right.\\]Find $a+b$ if the piecewise function is continuous (which means that its graph can be drawn without lifting your pencil from the paper)
+### Output 1: Let's think step by step. For $f(x)$ to be continuous, the left and right limits of each piece at $x=2$ and $x=-2$ must be equal. At $x=2$, the left limit is the value of $ax+3$ as $x$ approaches $2$ from the right, which is $2a+3$. The right limit is the value of $x-5$ as $x$ approaches $2$ from the left, which is $2-5=-3$. Equating these two limits gives us $2a+3=-3\Rightarrow a=-3$. Now, let's consider $x=-2$. The left limit is the value of $x-5$ as $x$ approaches $-2$ from the right, which is $-2-5=-7$. The right limit is the value of $2x-b$ as $x$ approaches $-2$ from the left, which is $2(-2)-b=-4-b$. Equating these two limits gives us $-4-b=-7\Rightarrow b=3$. Therefore, $a+b=(-3)+3=\boxed{0}$. The answer is: 0.
+### Output 2: Let's think step by step. For continuity, we require that as $x$ approaches 2 from the right, $f(x)$ approaches $f(2)$. In other words, we need $\lim_{x\rightarrow2^-}(ax+3)=f(2)$. Plugging in $x=2$, we get $2a+3=f(2)$. Similarly, as $x$ approaches $-2$ from the left, we require $\lim_{x\rightarrow-2^+}(2x-b)=f(-2)$. Plugging in $x=-2$, we get $-4-b=f(-2)$. Now we can solve these equations simultaneously to get $a=1$ and $b=1$. Therefore, $a+b=\boxed{2}$. The answer is: 2.
+### Your answer: 1
+
+
+### Question: $\\Delta ABC$ is isosceles with $AC = BC$. If $m\\angle C = 40^{\\circ}$, what is the number of degrees in $m\\angle CBD$? [asy] pair A,B,C,D,E;\nC = dir(65); B = C + dir(-65); D = (1.5,0); E = (2,0);\ndraw(B--C--A--E); dot(D);\nlabel("$A$",A,S); label("$B$",B,S); label("$D$",D,S); label("$C$",C,N);\n[/asy]
+### Output 1: Let's think step by step. Since $\\Delta ABC$ is isosceles with $AC = BC$, it follows that $\\angle ACB$ is also equal to $40^{\\circ}$. Hence, $\\angle ABC = 180^{\\circ}-40^{\\circ}-40^{\\circ}=100^{\\circ}$. Because $\\triangle ABC$ and $\\triangle CBD$ share an angle ($\\angle ABC$) and share a side ($BC$), they are similar. Thus, $m\\angle CBD = m\\angle ABC - 50^{\\circ} = 100^{\\circ} - 50^{\\circ} = \\boxed{50^{\\circ}}$. The answer is: 50^\\circ.
+### Output 2: Let's think step by step. Since $\\Delta ABC$ is isosceles, $m\\angle ACB=m\\angle CAB$. Since $m\\angle C=40^\\circ$, we know that $m\\angle ACB+m\\angle CAB=180^\\circ-40^\\circ=140^\\circ$. But $m\\angle ACB=m\\angle CAB$, so we can set up the equation $2(m\\angle ACB)=140^\\circ$. Solving for $m\\angle ACB$, we get $m\\angle ACB=70^\\circ$. Therefore, since $BC=CA$, $m\\angle CBD=180^\\circ-m\\angle ACB=\\boxed{110^\\circ}$. The answer is: 110^{\\circ}.
+### Your answer: 2
+
+
+### Question: A car travels 192 miles on 6 gallons of gas. How far can it travel on 8 gallons of gas?
+### Output 1: Let's think step by step. To find how far the car can travel on 8 gallons of gas, we multiply the distance traveled per gallon by the number of gallons of gas: $192 \\text{ miles/gallon } \\times 8 \\text{ gallons} = 1536$ miles. Therefore, the car can travel $\\boxed{1536}$ miles on 8 gallons of gas. The answer is: 1536.
+### Output 2: Let's think step by step. If the car travels 192 miles on 6 gallons of gas, it can travel $192\\div 6=32$ miles on 1 gallon of gas. To find how far it can travel on 8 gallons of gas, we multiply the distance it can travel on 1 gallon of gas by 8: $32\\times 8=\\boxed{256}$ miles. The answer is: 256.
+### Your answer: 2
+
+
+### Question: How many 3-letter words can we make from the letters A, B, C, and D, if we are allowed to repeat letters, and we must use the letter A at least once? (Here, a word is an arbitrary sequence of letters.)
+### Output 1: Let's think step by step. If we don't care about using the letter A at least once, we could count the number of 3-letter words as $4^3=64$, since each letter can be chosen independently. However, we need to subtract off the words that do not contain the letter A. There are $3^3=27$ ways to choose three letters without repeating any of the letters A, B, C, and D. Thus, the number of 3-letter words containing A is $64-27=\boxed{37}$. The answer is: 37.
+### Output 2: Let's think step by step. We know that we need to use the letter A at least once, so there will always be one A in each word. There are three possibilities for the first letter of the word, namely A, B, or C. For the second letter, there are four possibilities, because the letter A is already used up. Similarly, for the third letter, there are four possibilities again. Thus, the total number of 3-letter words that satisfy our conditions is $3\\cdot4\\cdot4=48$. The answer is: 48.
+### Your answer: 1
+
+
+### Question: If $A=2+i$, $O=-4$, $P=-i$, and $S=2+4i$, find $A-O+P+S$.
+### Output 1: Let's think step by step. To add complex numbers, we add their real parts and imaginary parts separately: $A-O+P+S=(2+i)-(-4)+(0-i)+(2+4i)=2+4+2+4i=i+10$. Therefore, $A-O+P+S$ is equal to $\\boxed{i+10}$. The answer is: i+10.
+### Output 2: Let's think step by step. We add up the four complex numbers: $$A-O+P+S=(2+i)-(-4)+(-i)+(2+4i)=2+i+4-i+2+4i=8+4i.$$Therefore, $A-O+P+S=\\boxed{8+4i}$. The answer is: 8+4i.
+### Your answer: 2

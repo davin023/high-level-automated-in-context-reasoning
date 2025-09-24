@@ -1,0 +1,22 @@
+{
+    "prompt_template": "### Instruction: Review the answers given by two models and determine which one is correct. Choose either 1 or 2 as the correct answer and respond with just that number, i.e., '1' or '2'. Avoid any extra content or explanation.\n\n{examples}\n\n\n### Question: {Question}\n### Output 1: {Output1}\n### Output 2: {Output2}\n### Your answer: ",
+    "stop_tokens": [
+        "</s>",
+        "USER:",
+        "USER",
+        "ASSISTANT:",
+        "ASSISTANT",
+        "Instruction:",
+        "Instruction",
+        "instruction",
+        "Response:",
+        "Response",
+        "response",
+        "#",
+        "# ",
+        "###",
+        "### ",
+        "\n\n\n"
+    ],
+    "answer_marker": "answer is"
+}

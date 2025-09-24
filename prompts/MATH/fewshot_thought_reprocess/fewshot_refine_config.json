@@ -1,0 +1,25 @@
+{
+    "prompt_template": "Given a math question, partial solution steps, and potential errors, analyze the solution steps and correct any mistakes.\n\nGuidlines:\n1. Evaluate each solution step provided, identifying any errors in logic or calculation.\n2. For each identified error, explain the reasoning in the <THINKING> section.\n3. Provide a corrected solution in the <CORRECT> section.\n4. Ensure the final output maintains the specified format.\n\nPurpose: Help clarify and correct mathematical reasoning step-by-step, displaying critical thinking and clear solution paths.\n\nNote: The provided solution is generally incomplete; do not attempt to fill in missing parts. Focus solely on analyzing the given solution. Maintain the original language style, including the formatting and notation of formulas.\n\nOutput Format:\n\n- <THINKING>: Use this section to think through and identify any mistakes.\n- <CORRECT>: Provide the corrected solution in this section.\n\nExamples:\n\n{examples}\n\n\n\n### Question:\n{instruction}\n### Some Steps:\n{steps}\n\n<THINKING>:\n",
+    "prompt_template2": "You are given a math word problem along with some steps that attempt to solve it. Your task is to review and correct the steps where necessary, focusing only on the given solution. Do not complete the subsequent steps of the solution. Then, provide a clear summary of the correct solution. Guidlines:\n1. First, analyze the steps provided and check for any errors or miscalculations.\n2. Correct the errors if any, and explain the correct approach to solve the problem.\n   - If a step is correct, output 'This step is correct.'\n   - If a step is incorrect, output 'This step is incorrect.' followed by the analysis.\n3. After reviewing the steps, summarize the solution with a brief statement, including the final result.\n4. Focus on checking, correcting, or summarizing the provided solution only, without adding missing parts.\n\n{examples}\n\n\n\n### Question:\n{instruction}\n\n### Some Steps:\n{steps}\n\n<CORRECT>:\n",
+    "stop_tokens": [
+        "</s>",
+        "Question:",
+        "Question",
+        "USER:",
+        "USER",
+        "ASSISTANT:",
+        "ASSISTANT",
+        "Answer:",
+        "Answer",
+        "Instruction:",
+        "Instruction",
+        "Response:",
+        "Response",
+        "#",
+        "# ",
+        "###",
+        "### ",
+        "\n\n\n"
+    ],
+    "answer_marker": "answer is"
+}
