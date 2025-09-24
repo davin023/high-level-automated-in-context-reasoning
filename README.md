@@ -1,5 +1,5 @@
-# Beyond Examples: High-level Automated Reasoning Paradigm in In-Context Learning via MCTS
-This repository is the official implementation of "Beyond Examples: High-level Automated Reasoning Paradigm in In-Context Learning via MCTS".
+# Automated In-Context Reasoning for Large Language Models
+This repository is the official implementation of "Automated In-Context Reasoning for Large Language Models".
 
 ## Contents
 - [Introduction](#Introduction)
@@ -10,25 +10,25 @@ This repository is the official implementation of "Beyond Examples: High-level A
 
 ## Introduction
 
-We introduces **HiAR-ICL**, a **Hi**gh-level **A**utomated **R**easoning paradigm in **ICL** to enhance the complex reasoning capabilities of large language models. Unlike traditional in-context learning, HiAR-ICL shifts the focus from example-based analogical learning to abstract thought patterns.
+We introduces **AutoICR**, a High-level **Auto**mated **I**n-**C**ontext **R**easoning paradigm to enhance the complex reasoning capabilities of large language models. Unlike traditional in-context learning, AutoICR shifts the focus from example-based analogical learning to abstract thought patterns.
 
 <p align="center">
   <img src="assets/Figure1.png">
     <br>
-    <em>Figure 1: Schematic comparison between HiAR-ICL and traditional zero-shot and few-shot in-context learning methods using a teacher-student paradigm.</em>
+    <em>Figure 1: Schematic comparison between AutoICR and traditional zero-shot and few-shot in-context learning methods using a teacher-student paradigm.</em>
 </p>
 
-Our approach begins by defining five atomic reasoning actions, upon which we employ Monte Carlo Tree Search to systematically construct high-level reasoning patterns. During inference, HiAR-ICL dynamically selects appropriate reasoning patterns based on problem attributes, providing explicit guidance for the model’s reasoning process.
+Our approach begins by defining five atomic reasoning actions, upon which we employ Monte Carlo Tree Search to systematically construct high-level reasoning patterns. During inference, AutoICR dynamically selects appropriate reasoning patterns based on problem attributes, providing explicit guidance for the model’s reasoning process.
 
-Specifically, **HiAR-ICL** consists of two main components:
+Specifically, **AutoICR** consists of two main components:
 - *MCTS-powered Thought Card Construction*: Leverage MCTS to systematically construct high level thought cards, which effectively guides subsequent problem-solving.
 - *Adaptive Reasoning and Verification*: Dynamically select and execute optimal reasoning patterns based on the problem's cognitive complexity, followed by solution verification.
 
-The flowchart of our method HiAR-ICL is shown below:
+The flowchart of our method AutoICR is shown below:
 <p align="center">
   <img src="assets/Figure2.png">
     <br>
-    <em>Figure 2: Flowchart of our method HiAR-ICL. This framework consists of two main parts: (1) MCTS-Powered Thought Card Construction; and (2) Adaptive Reasoning and Verification.</em>
+    <em>Figure 2: Flowchart of our method AutoICR. This framework consists of two main parts: (1) MCTS-Powered Thought Card Construction; and (2) Adaptive Reasoning and Verification.</em>
 </p>
 
 
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 
 ## Usage
->  HiAR-ICL consists of two steps, and our released code implements an efficient parallel tree search. *Note that, to ensure fair comparison with other methods such as rStar, the time cost reported in our paper corresponds to the non-parallelized version, following the same measurement protocol adopted in previous works.*
+>  AutoICR consists of two steps, and our released code implements an efficient parallel tree search. *Note that, to ensure fair comparison with other methods such as rStar, the time cost reported in our paper corresponds to the non-parallelized version, following the same measurement protocol adopted in previous works.*
 In practical applications, however, employing the parallel implementation provided in this repository can lead to substantially improved efficiency.
 
 ### Step 1: Construct high-level thought cards via MCTS
