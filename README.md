@@ -12,23 +12,18 @@ This repository is the official implementation of "Automated In-Context Reasonin
 
 We introduces **AutoICR**, a High-level **Auto**mated **I**n-**C**ontext **R**easoning paradigm to enhance the complex reasoning capabilities of large language models. Unlike traditional in-context learning, AutoICR shifts the focus from example-based analogical learning to abstract thought patterns.
 
-<p align="center">
-  <img src="assets/Figure1.png">
-    <br>
-    <em>Figure 1: Schematic comparison between AutoICR and traditional zero-shot and few-shot in-context learning methods using a teacher-student paradigm.</em>
-</p>
 
-Our approach begins by defining five atomic reasoning actions, upon which we employ Monte Carlo Tree Search to systematically construct high-level reasoning patterns. During inference, AutoICR dynamically selects appropriate reasoning patterns based on problem attributes, providing explicit guidance for the model’s reasoning process.
+Our approach begins by defining five atomic reasoning actions, upon which we employ Monte Carlo Tree Search to automatically construct high-level reasoning patterns. During inference, AutoICR dynamically selects appropriate reasoning patterns based on problem attributes, providing explicit guidance for the model’s reasoning process.
 
 Specifically, **AutoICR** consists of two main components:
-- *MCTS-powered Thought Card Construction*: Leverage MCTS to systematically construct high level thought cards, which effectively guides subsequent problem-solving.
+- *MCTS-powered Thought Card Construction*: Leverage MCTS to automatically construct high level thought cards, which effectively guides subsequent problem-solving.
 - *Adaptive Reasoning and Verification*: Dynamically select and execute optimal reasoning patterns based on the problem's cognitive complexity, followed by solution verification.
 
 The flowchart of our method AutoICR is shown below:
 <p align="center">
   <img src="assets/Figure2.png">
     <br>
-    <em>Figure 2: Flowchart of our method AutoICR. This framework consists of two main parts: (1) MCTS-Powered Thought Card Construction; and (2) Adaptive Reasoning and Verification.</em>
+    <em>Flowchart of our method AutoICR. This framework consists of two main parts: (1) MCTS-Powered Thought Card Construction; and (2) Adaptive Reasoning and Verification.</em>
 </p>
 
 
